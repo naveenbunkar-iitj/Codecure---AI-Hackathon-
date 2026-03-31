@@ -1,34 +1,54 @@
-# Codecure AI Hackathon Prototype
+# HealthCure AI 🏥
 
-This repository contains a simple, deterministic command-line prototype for baseline health risk triage.
+## Overview
+HealthCure AI is a HealthTech prototype that predicts user health risks based on lifestyle inputs and provides preventive recommendations.
 
-## Project Structure
+## Features
+- Health risk prediction (Low/Medium/High)
+- Personalized suggestions
+- Simple web interface
+- Scalable backend API
 
-- `app/main.py` — CLI entrypoint and input handling.
-- `app/model.py` — deterministic baseline scoring logic.
-- `app/utils.py` — recommendation mapping by risk tier.
-- `data/sample_data.csv` — tiny sample dataset for quick testing.
-- `docs/workflow.md` — end-to-end execution flow.
-- `requirements.txt` — dependency file (none required).
+## Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Flask (Python)
 
-## Quick Start
-
-1. Ensure Python 3.10+ is available.
-2. Run the CLI from repository root:
-
-```bash
-python -m app.main
+## Updated Folder Structure
+```text
+healthcure-ai/
+├── backend/
+│   ├── app.py
+│   ├── model.py
+│   └── utils.py
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── requirements.txt
+└── README.md
 ```
 
-3. Enter prompted values:
-   - age
-   - weight
-   - exercise days per week
-   - smoking status (`yes`/`no`)
+## Installation & Run
 
-You will receive a risk tier (`Low`, `Moderate`, or `High`) and a recommendation.
+### 1) Start backend
+```bash
+cd backend
+pip install -r ../requirements.txt
+python app.py
+```
 
-## Notes
+### 2) Open frontend
+Open `frontend/index.html` in your browser.
 
-- This is a baseline deterministic heuristic for prototyping only.
-- It is not a medical device and should not be used for clinical decision-making.
+## Workflow
+User Input → Flask API → Risk Model → Recommendation → UI Output
+
+## Future Scope
+- AI/ML model integration
+- Wearable device data
+- Doctor consultation system
+- React dashboard UI
+- Cloud deployment on Render / Vercel
+
+## Author
+Naveen
