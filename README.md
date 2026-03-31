@@ -1,34 +1,23 @@
-# Codecure AI Hackathon Prototype
+# HealthCure AI 🏥
 
-This repository contains a simple, deterministic command-line prototype for baseline health risk triage.
+## Overview
+An AI-powered health risk prediction system that analyzes user symptoms and lifestyle data to provide preventive healthcare insights.
 
-## Project Structure
+## Features
+- AI-based risk prediction
+- Symptom analysis
+- Personalized recommendations
+- Scalable architecture
 
-- `app/main.py` — CLI entrypoint and input handling.
-- `app/model.py` — deterministic baseline scoring logic.
-- `app/utils.py` — recommendation mapping by risk tier.
-- `data/sample_data.csv` — tiny sample dataset for quick testing.
-- `docs/workflow.md` — end-to-end execution flow.
-- `requirements.txt` — dependency file (none required).
+## Tech Stack
+- Python / TypeScript
+- AI/ML models
+- Web interface (Next.js)
 
-## Quick Start
-
-1. Ensure Python 3.10+ is available.
-2. Run the CLI from repository root:
-
-```bash
-python -m app.main
-```
-
-3. Enter prompted values:
-   - age
-   - weight
-   - exercise days per week
-   - smoking status (`yes`/`no`)
-
-You will receive a risk tier (`Low`, `Moderate`, or `High`) and a recommendation.
-
-## Notes
-
-- This is a baseline deterministic heuristic for prototyping only.
-- It is not a medical device and should not be used for clinical decision-making.
+## Workflow
+User Input → AI Model → Risk Prediction → Recommendation        Mapping (Easy Conversion)
+Current Feature	Convert To
+Code scan	Health data analysis
+Vulnerability detection	Disease risk prediction
+Auto PR fixes	Health recommendations
+Blockchain proof	Patient data log
