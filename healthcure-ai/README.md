@@ -23,10 +23,21 @@ HealthCure AI is a HealthTech prototype that predicts user health risks based on
 
 ### Backend
 ```bash
-cd healthcure-ai/backend
-pip install -r ../requirements.txt
+cd backend
+pip install -r requirements.txt
 python app.py
 ```
 
 ### Frontend
-Open `healthcure-ai/frontend/index.html` in a browser.
+Open `index.html` in browser.
+
+## Workflow
+User Input → Flask API → Risk Model → Recommendation → UI Output
+
+## Future Scope
+- AI/ML model integration
+- Wearable device data
+- Doctor consultation system
+
+## Author
+Naveen
